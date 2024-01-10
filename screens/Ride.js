@@ -15,7 +15,11 @@ export default class TransactionScreen extends Component {
   }
 
   getCameraPermissions = async domState => {
-
+    // |
+    // V
+    //node_modules esta faltando pq eu n consegui emporta-lo
+    // A
+    // |
     const { status } = await Permissions.askAsync(Permissions.CAMERA);
     //const { status } = Permissions.askAsync(Permissions.CAMERA);
     //const { status } = await Permissions.askAsync(Permissions);
